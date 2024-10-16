@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "configcat-features-api"
+version = "0.1.0"
+description = "A trivial API to return ConfigCat feature flag results"
+authors = ["Matt Wilson <matt@callmematt.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = {extras = ["standard"], version = "^0.115.2"}
+configcat-client = "^9.0.4"
+uvicorn = {extras = ["standard"], version = "^0.32.0"}
+greenlet = "^3.1.1"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.10.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
